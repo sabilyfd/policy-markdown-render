@@ -17,11 +17,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 220 26% 14%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 220 26% 14%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -101,5 +101,42 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Typography for long-form content */
+  .prose {
+    @apply text-foreground;
+  }
+  
+  .prose h1 {
+    @apply text-3xl font-bold text-primary mb-6 mt-8;
+  }
+  
+  .prose h2 {
+    @apply text-2xl font-semibold text-primary mb-4 mt-6;
+  }
+  
+  .prose h3 {
+    @apply text-xl font-semibold text-primary mb-3 mt-5;
+  }
+  
+  .prose p {
+    @apply mb-4 leading-7;
+  }
+  
+  .prose ul, .prose ol {
+    @apply mb-4 ml-6 space-y-2;
+  }
+  
+  .prose li {
+    @apply leading-7;
+  }
+  
+  .prose strong {
+    @apply font-semibold text-primary;
+  }
+  
+  .prose a {
+    @apply text-primary underline hover:text-primary/80;
   }
 }
