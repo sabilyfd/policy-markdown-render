@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import { FileText, Code, Beaker } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const Lab = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-card">
         <div className="max-w-6xl mx-auto px-4 py-6">
@@ -138,20 +136,7 @@ const Lab = () => {
                 Flutter + Supabase system for ethical donor management and coordination.
               </p>
             </div>
-            <div className="border border-border rounded-lg p-8 hover:border-accent transition-all">
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex items-center gap-3">
-                  <Beaker className="h-8 w-8 text-accent" />
-                  <h3 className="text-2xl font-bold">InsanLab Experiments</h3>
-                </div>
-                <span className="px-3 py-1 bg-accent/20 text-accent text-sm font-medium rounded-full">
-                  Ongoing
-                </span>
-              </div>
-              <p className="text-muted-foreground">
-                Ethical AI and data protection experiments for research and education.
-              </p>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -199,8 +184,6 @@ const Lab = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Lab;
