@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { Shield, Users, BookOpen, Target } from "lucide-react";
-
 const About = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-card">
         <div className="max-w-6xl mx-auto px-4 py-6">
@@ -55,10 +53,7 @@ const About = () => {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto space-y-6">
           <h2 className="text-4xl font-bold">The Meaning of 'Sabily'</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Derived from the Arabic word 'Sabeel' meaning 'path' or 'way' — symbolizing our journey 
-            toward purposeful, ethical innovation.
-          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed">Derived from the Arabic word (Sura Yousuf:108) 'Sabeel' meaning 'path' or 'way' — symbolizing our journey toward purposeful, ethical innovation.</p>
         </div>
       </section>
 
@@ -113,12 +108,12 @@ const About = () => {
           <h2 className="text-4xl font-bold">Structure & Units</h2>
           <div className="space-y-4">
             <div className="border border-border rounded-lg p-6 bg-card">
-              <h3 className="text-2xl font-bold mb-2">Cyber Security Team (CST)</h3>
+              <h3 className="text-2xl font-bold mb-2">Cyber Security Team</h3>
               <p className="text-muted-foreground">Red Team, Blue Team, and Unit Al-Furqan operations</p>
             </div>
             <div className="border border-border rounded-lg p-6 bg-card">
-              <h3 className="text-2xl font-bold mb-2">InsanLab</h3>
-              <p className="text-muted-foreground">Research & Development division</p>
+              <h3 className="text-2xl font-bold mb-2">Artificial Intelligence Team</h3>
+              <p className="text-muted-foreground">AI for Humanity.</p>
             </div>
             <div className="border border-border rounded-lg p-6 bg-card">
               <h3 className="text-2xl font-bold mb-2">Outreach & Publications</h3>
@@ -136,13 +131,13 @@ const About = () => {
             <div className="flex gap-6 items-start">
               <div className="flex-shrink-0 w-24 text-2xl font-bold text-accent">2024</div>
               <div className="flex-grow pt-1">
-                <p className="text-lg text-muted-foreground">Formation of CST and InsanLab</p>
+                <p className="text-lg text-muted-foreground">Formation of CST.</p>
               </div>
             </div>
             <div className="flex gap-6 items-start">
               <div className="flex-shrink-0 w-24 text-2xl font-bold text-accent">2025</div>
               <div className="flex-grow pt-1">
-                <p className="text-lg text-muted-foreground">Publication of AI Misinformation Whitepaper</p>
+                <p className="text-lg text-muted-foreground">Top 20th in Cyber Raid 2025, National CTF Contest by Bangladesh Army.</p>
               </div>
             </div>
           </div>
@@ -186,8 +181,6 @@ const About = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
